@@ -2,8 +2,6 @@ import csv
 import psycopg2
 from connect import get_connection
 
-
-# --- Create table if it does not exist ---
 def create_table():
     conn = get_connection()
     cur = conn.cursor()
@@ -18,8 +16,6 @@ def create_table():
     cur.close()
     conn.close()
 
-
-# --- Insert from CSV file ---
 def insert_from_csv():
     filename = input("Enter CSV file name [contacts.csv]: ")
     if filename == "":
@@ -44,8 +40,6 @@ def insert_from_csv():
     cur.close()
     conn.close()
 
-
-# --- Insert from console ---
 def insert_from_console():
     name = input("Enter first name: ")
     phone = input("Enter phone number: ")
@@ -62,8 +56,6 @@ def insert_from_console():
     cur.close()
     conn.close()
 
-
-# --- Update a contact ---
 def update_contact():
     phone = input("Enter phone of contact to update: ")
     print("What to update?  1 - name   2 - phone")
@@ -88,8 +80,6 @@ def update_contact():
     cur.close()
     conn.close()
 
-
-# --- Search / query contacts ---
 def search_contacts():
     print("Search by:  1 - all   2 - name   3 - partial name   4 - phone prefix")
     choice = input("Your choice: ")
@@ -124,8 +114,6 @@ def search_contacts():
     cur.close()
     conn.close()
 
-
-# --- Delete a contact ---
 def delete_contact():
     print("Delete by:  1 - name   2 - phone")
     choice = input("Your choice: ")
@@ -150,12 +138,9 @@ def delete_contact():
     cur.close()
     conn.close()
 
-
-# --- Create table on start ---
 create_table()
 print("PhoneBook ready!")
 
-# --- Main menu ---
 while True:
     print("\n--- PhoneBook Menu ---")
     print("1 - Insert from CSV file")
