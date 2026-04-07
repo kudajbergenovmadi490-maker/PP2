@@ -1,8 +1,6 @@
 import psycopg2
 from connect import get_connection
 
-
-# --- Search contacts by name or phone ---
 def search_contacts():
     pattern = input("Enter name or phone to search: ")
     conn = get_connection()
@@ -17,8 +15,6 @@ def search_contacts():
     cur.close()
     conn.close()
 
-
-# --- Insert or update a contact ---
 def upsert_contact():
     name = input("Enter name: ")
     phone = input("Enter phone: ")
@@ -30,8 +26,6 @@ def upsert_contact():
     cur.close()
     conn.close()
 
-
-# --- Insert many contacts at once ---
 def bulk_insert():
     names = []
     phones = []
@@ -69,8 +63,6 @@ def bulk_insert():
     cur.close()
     conn.close()
 
-
-# --- Show contacts with pagination ---
 def paginated_query():
     limit = int(input("How many rows per page? "))
     offset = int(input("Skip how many rows? "))
@@ -86,8 +78,6 @@ def paginated_query():
     cur.close()
     conn.close()
 
-
-# --- Delete a contact ---
 def delete_contact():
     print("Delete by: 1 - name   2 - phone")
     choice = input("Your choice: ")
@@ -109,8 +99,6 @@ def delete_contact():
     cur.close()
     conn.close()
 
-
-# --- Main menu ---
 while True:
     print("\n--- PhoneBook Menu ---")
     print("1 - Search contacts")
