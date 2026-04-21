@@ -11,8 +11,8 @@ import pygame
 from clock import get_current_time, get_hand_angle, degrees_to_pygame_angle
 
 # ── Constants ────────────────────────────────────────────────────────────────
-WINDOW_WIDTH  = 500
-WINDOW_HEIGHT = 500
+WINDOW_WIDTH  = 600
+WINDOW_HEIGHT = 600
 FPS           = 10          # Refresh rate (10 fps is plenty for a clock)
 BG_COLOR      = (240, 240, 240)
 
@@ -127,7 +127,11 @@ def main() -> None:
         minutes, seconds = get_current_time()
 
         # ── Draw background & clock face ─────────────────────────────────────
-        screen.fill(BG_COLOR)
+        bg = pygame.image.load("images/background.png").convert()
+        bg = pygame.transform.scale(bg, (WINDOW_WIDTH, WINDOW_HEIGHT))
+        screen.blit(bg, (0, 0))
+        
+        # ── Draw clock face ───────────────────────────────────────────────────
         draw_clock_face(screen)
 
         # ── Draw minute hand (right hand) ─────────────────────────────────────
