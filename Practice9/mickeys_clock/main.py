@@ -11,8 +11,8 @@ import pygame
 from clock import get_current_time, get_hand_angle, degrees_to_pygame_angle
 
 # ── Constants ────────────────────────────────────────────────────────────────
-WINDOW_WIDTH  = 600
-WINDOW_HEIGHT = 600
+WINDOW_WIDTH  = 650
+WINDOW_HEIGHT = 650
 FPS           = 10          # Refresh rate (10 fps is plenty for a clock)
 BG_COLOR      = (240, 240, 240)
 
@@ -22,8 +22,8 @@ CENTER_Y = WINDOW_HEIGHT // 2
 
 # Where the hand "pivot point" sits within the hand image (as a fraction).
 # Adjust these if your image's pivot is not at the bottom-center.
-PIVOT_X_FRACTION = 0.5   # horizontal center
-PIVOT_Y_FRACTION = 0.85  # near the bottom of the image
+PIVOT_X_FRACTION = 0.9   # horizontal center
+PIVOT_Y_FRACTION = 1  # near the bottom of the image
 
 
 def load_hand_image(path: str, scale: tuple[int, int]) -> pygame.Surface:
@@ -110,7 +110,7 @@ def main() -> None:
     font = pygame.font.SysFont("Arial", 28, bold=True)
 
     # Load hand image – both hands use the same graphic
-    hand_img = load_hand_image("images/mickey_hand.png", scale=(40, 160))
+    hand_img = load_hand_image("images/mickey_hand.png", scale=(10,90))
 
     # ── Main loop ────────────────────────────────────────────────────────────
     running = True
@@ -131,10 +131,7 @@ def main() -> None:
         bg = pygame.transform.scale(bg, (WINDOW_WIDTH, WINDOW_HEIGHT))
         screen.blit(bg, (0, 0))
         
-        # ── Draw clock face ───────────────────────────────────────────────────
-        draw_clock_face(screen)
-
-        # ── Draw minute hand (right hand) ─────────────────────────────────────
+    # ── Draw minute hand (right hand) ─────────────────────────────────────
         minute_angle = get_hand_angle(minutes, 60)
         draw_hand(screen, hand_img, minute_angle)
 
