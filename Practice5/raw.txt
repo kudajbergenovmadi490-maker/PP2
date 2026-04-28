@@ -1,0 +1,43 @@
+========================================
+         SUPERMARKET FRESH MART
+         123 Main Street, Almaty
+         Tel: +7 (727) 123-45-67
+========================================
+Date: 25/04/2025       Time: 14:32:07
+Cashier: Anna K.       Terminal: POS-03
+----------------------------------------
+RECEIPT #: 00847261
+----------------------------------------
+ITEMS PURCHASED:
+----------------------------------------
+1. Whole Milk 1L              x2   480.00
+2. Sourdough Bread            x1   350.00
+3. Free Range Eggs 12pk       x1   890.00
+4. Organic Butter 200g        x2  1240.00
+5. Cheddar Cheese 300g        x1   750.00
+6. Greek Yogurt 500g          x3   630.00
+7. Orange Juice 1L            x2   560.00
+8. Chicken Breast 1kg         x1  1850.00
+9. Basmati Rice 2kg           x1   620.00
+10. Olive Oil 500ml           x1  1100.00
+11. Pasta Spaghetti 400g      x2   280.00
+12. Tomato Sauce 350g         x3   210.00
+13. Dark Chocolate 100g       x2   390.00
+14. Mineral Water 1.5L        x6   180.00
+15. Green Tea 25 bags         x1   320.00
+----------------------------------------
+          SUBTOTAL:          9830.00
+          DISCOUNT (5%):     -491.50
+          TAX (12%):         1119.90
+----------------------------------------
+          TOTAL:            10458.40
+----------------------------------------
+Payment Method: KASPI CARD
+Card Number: **** **** **** 7842
+Authorization: AUT-20250425-8471
+----------------------------------------
+Thank you for shopping at Fresh Mart!
+Visit us again at www.freshmart.kz
+Loyalty Points Earned: 104
+Total Loyalty Points: 2847
+========================================

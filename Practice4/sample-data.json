@@ -1,0 +1,54 @@
+{
+  "company": "TechCorp",
+  "founded": 2010,
+  "active": true,
+  "employees": [
+    {
+      "id": 1,
+      "name": "Alice Johnson",
+      "age": 30,
+      "department": "Engineering",
+      "salary": 85000,
+      "skills": ["Python", "JavaScript", "SQL"]
+    },
+    {
+      "id": 2,
+      "name": "Bob Smith",
+      "age": 25,
+      "department": "Marketing",
+      "salary": 65000,
+      "skills": ["SEO", "Content Writing", "Analytics"]
+    },
+    {
+      "id": 3,
+      "name": "Charlie Brown",
+      "age": 35,
+      "department": "Engineering",
+      "salary": 95000,
+      "skills": ["Python", "Machine Learning", "Docker"]
+    },
+    {
+      "id": 4,
+      "name": "Diana Prince",
+      "age": 28,
+      "department": "Design",
+      "salary": 72000,
+      "skills": ["Figma", "Photoshop", "CSS"]
+    },
+    {
+      "id": 5,
+      "name": "Eve Wilson",
+      "age": 32,
+      "department": "Engineering",
+      "salary": 90000,
+      "skills": ["Java", "Kubernetes", "AWS"]
+    }
+  ],
+  "office": {
+    "city": "Almaty",
+    "country": "Kazakhstan",
+    "floors": 3,
+    "capacity": 200
+  },
+  "products": ["App A", "App B", "Service C"]
+}
